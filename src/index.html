@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Lorem Ipsum Generator</title>
+</head>
+
+<body class="font-sans">
+  <!-- Header -->
+  <header>
+    <div class="container mx-auto h-[50px] min-w-full shadow-lg flex items-center justify-center">
+      <h1 class="text-[#2e9739] text-2xl font-bold">Lorem Ipsum Generator</h1>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="generate-lorem-ipsum py-5 h-[calc(100vh-50px)]">
+      <div class="container mx-auto">
+        <div class="lorem-generation-form">
+          <form class="flex items-center justify-center">
+            
+            <div
+              class="form-content min-w-[800px] flex flex-col gap-5 shadow-[0_8px_30px_rgba(0,0,0,0.6)] px-3 py-3.5 rounded-lg">
+              
+              <!-- Paragraphs -->
+              <div class="paragraph flex flex-col items-start justify-start gap-4">
+                <label class="text-[#404040] font-semibold">Paragraphs:</label>
+                <input type="range" value="20" min="1" max="1000"
+                  class="w-full py-2.5 px-2.5 shadow-2xl">
+              </div>
+
+              <!-- Words per paragraph -->
+              <div class="words-per-paragraph flex flex-col items-start justify-start gap-4">
+                <label class="text-[#404040] font-semibold">Words Per Paragraph:</label>
+                <input type="range" value="20" min="1" max="1000"
+                  class="w-full py-2.5 px-2.5 shadow-2xl">
+              </div>
+
+              <!-- Tag input -->
+              <div class="tag flex flex-col items-start justify-start gap-2.5">
+                <label class="text-[#404040] font-semibold">Tag:</label>
+                <input type="text" placeholder="<p>"
+                  class="w-full py-2.5 px-5 shadow-2xl rounded-xl border border-[#bebcbc] text-black bg-[#F9F9F9] focus:outline-0">
+              </div>
+
+              <!-- Include HTML input -->
+              <div class="include-html flex flex-col items-start justify-start gap-2.5">
+                <label class="text-[#404040] font-semibold">Include HTML:</label>
+                <input type="text" placeholder="Yes"
+                  class="w-full py-2.5 px-5 shadow-2xl rounded-xl border border-[#bebcbc] text-black bg-[#F9F9F9] focus:outline-0">
+              </div>
+
+              <!-- Button -->
+              <div class="btn">
+                <button type="submit"
+                  class="w-full text-white bg-[#008001] py-2.5 font-semibold cursor-pointer hover:opacity-95">
+                  Generate Lorem Ipsum
+                </button>
+              </div>
+
+              <!-- Textarea -->
+              <div class="show-paragraph">
+                <textarea rows="6"
+                  class="border-2 border-[#eb1a5c] w-full focus:outline-none rounded-lg"></textarea>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
